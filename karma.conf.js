@@ -12,6 +12,13 @@ module.exports = function (config) {
     files: [
       'tests.webpack.js'
     ],
+    
+    plugins : [
+      'karma-chrome-launcher',
+      'karma-mocha',
+      'karma-sourcemap-loader',
+      'karma-webpack',
+    ],
 
     preprocessors: {
       'tests.webpack.js': [ 'webpack', 'sourcemap' ]
